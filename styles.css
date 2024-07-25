@@ -1,56 +1,63 @@
-/* Estilos para la calculadora de oxígeno disuelto */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-input, button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+label {
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 5px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
-    background-color: #474b4e;
-    color: bluish gray;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    width: 100%;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }
 
-.button-group {
-    display: flex;
-    gap: 10px; /* Espacio entre los botones */
-}
-
-#results {
+#result {
     margin-top: 20px;
+    font-size: 18px;
+    color: #333;
 }
